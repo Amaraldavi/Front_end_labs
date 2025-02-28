@@ -1,0 +1,24 @@
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    background-image: url(../img/sobre-background.jpg);
+}
+h2 {
+    border-bottom: 2px groove #333333;
+}figure{
+    background-color: #7373738a;
+    border: 1px solid #585656;
+    text-align: center;
+   
+}
+figcaption {
+    font-style: italic;
+  
+}
