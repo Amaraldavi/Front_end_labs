@@ -8,6 +8,9 @@
     --font-figurecaption:"Big Shoulders Inline", cursive;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: var(--color-base);
     font-family: var(--font-body)
