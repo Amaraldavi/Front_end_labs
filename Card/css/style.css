@@ -1,39 +1,104 @@
+:root{
+    --color-primary: #0f71ff;
+    --color-background: #ecf4ff;
+    --color-text: #36393f;
+    --color-light: #f7f7f7;
+    --color-alert: orange;
+
+
+    --font-main: 'Poppins', sans-serif;
+
+
+    --card-width: 300px;
+    --card-padding: 40px;
+    --card-height: 540px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-main) ;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+
+
+}
+
 .card{
-    border: 1px solid #000;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: var(--card-width);
+    max-width: var(--card-width);
+    height: var(--card-height);
+    padding: var(--card-padding);
     border-radius: 5px;
-    padding: 100px 50px;
-    margin: 100px 50px;
-}
-
-h2{
+    background-color: white;
+    font-size: 100%;
     text-align: center;
-    font-size: 30px;
-    color: #000;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
 }
 
-ul{
+.card:hover{
+    transform: scale(1.10);
+    box-shadow: 0 4px 20px black;
+}
+
+.card h2{
+    margin: 0;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.card var{
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+}
+
+.card:hover var{
+    font-size: 60px;
+}
+
+.card var small{
+    font-size: 16px;
+}
+
+abbr[title]{
+    cursor: help;
+}
+
+ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+
 }
 
-var{
-    font-weight: bold;
-    color: #250abf;
-    text-align: center;
+ul li{
     display: flex;
-    justify-content: center;
-    font-size: 40px;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 0px;
 }
 
-button{
-    background-color: #ffffff;
-    color: #0537ee;
-    border: 2px solid #0537ee;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
+ul > li:first-child{
+    font-weight: 500;
 }
