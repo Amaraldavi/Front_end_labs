@@ -51,7 +51,7 @@ input[type="tel"] {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px;
-    background-color: #222;
+    background-color: #f60707;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
 }
